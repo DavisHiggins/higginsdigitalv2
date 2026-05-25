@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Higgins Building Group before website screenshot-style preview</title>
+  <desc id="desc">A screenshot-style visual of the previous Higgins Building Group website with a dated layout.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#dbe4ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0b1224" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="760" rx="48" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="70" width="1108" height="620" rx="30" fill="#ffffff"/>
+    <rect x="86" y="70" width="1108" height="68" rx="30" fill="#eff3f7"/>
+    <circle cx="132" cy="104" r="9" fill="#ef4444"/><circle cx="162" cy="104" r="9" fill="#f59e0b"/><circle cx="192" cy="104" r="9" fill="#22c55e"/>
+    <rect x="246" y="94" width="520" height="18" rx="9" fill="#cbd5e1"/>
+    <rect x="126" y="174" width="236" height="472" rx="18" fill="#eef2f7"/>
+    <text x="157" y="220" fill="#334155" font-family="Arial, sans-serif" font-size="22" font-weight="700">Higgins Building Group</text>
+    <g fill="#64748b" font-family="Arial, sans-serif" font-size="18">
+      <text x="157" y="278">Home</text><text x="157" y="324">About Us</text><text x="157" y="370">Properties</text>
+      <text x="157" y="416">Our Gallery</text><text x="157" y="462">Testimonials</text><text x="157" y="508">Contact Us</text>
+    </g>
+    <rect x="402" y="174" width="716" height="192" rx="20" fill="#d6e3ee"/>
+    <path d="M402 340 C520 270 636 280 750 205 C850 139 990 172 1118 110 L1118 366 L402 366 Z" fill="#b2c6d8" opacity=".7"/>
+    <rect x="402" y="402" width="504" height="28" rx="14" fill="#334155" opacity=".92"/>
+    <rect x="402" y="452" width="672" height="16" rx="8" fill="#94a3b8"/>
+    <rect x="402" y="482" width="626" height="16" rx="8" fill="#94a3b8"/>
+    <rect x="402" y="512" width="588" height="16" rx="8" fill="#94a3b8"/>
+    <rect x="402" y="574" width="196" height="18" rx="9" fill="#64748b"/>
+    <rect x="402" y="608" width="152" height="16" rx="8" fill="#94a3b8"/>
+    <rect x="580" y="608" width="170" height="16" rx="8" fill="#94a3b8"/>
+    <rect x="776" y="608" width="142" height="16" rx="8" fill="#94a3b8"/>
+  </g>
+  <g transform="translate(910 594)">
+    <rect x="0" y="0" width="230" height="54" rx="27" fill="#0f172a"/>
+    <text x="32" y="35" fill="#ffffff" font-family="Arial, sans-serif" font-size="17" font-weight="700">Previous website</text>
+  </g>
+</svg>

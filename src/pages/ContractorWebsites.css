@@ -1,0 +1,271 @@
+.contractor-page {
+  padding-top: 80px;
+}
+
+.contractor-hero {
+  padding-bottom: 40px;
+}
+
+.contractor-hero__content {
+  max-width: 720px;
+}
+
+.contractor-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--hd-white);
+  line-height: 1.1;
+  margin: 14px 0 18px;
+}
+
+.contractor-hero__sub {
+  font-size: 1.05rem;
+  color: var(--hd-muted);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.contractor-hero__ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+.contractor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.contractor-problem-card,
+.contractor-need-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contractor-problem-card__icon,
+.contractor-need-card__icon {
+  font-size: 1.2rem;
+}
+
+.contractor-problem-card__title,
+.contractor-need-card__title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--hd-white);
+}
+
+.contractor-problem-card__desc,
+.contractor-need-card__desc {
+  font-size: 0.85rem;
+  color: var(--hd-muted);
+  line-height: 1.6;
+}
+
+/* Proof */
+.contractor-proof {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contractor-proof__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--hd-white);
+  margin-bottom: 12px;
+}
+
+.contractor-proof__tagline {
+  font-size: 0.95rem;
+  color: var(--hd-muted);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.contractor-proof__results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contractor-proof__result {
+  padding: 16px;
+  background: var(--hd-card);
+  border: 1px solid var(--hd-border);
+  border-radius: 10px;
+}
+
+.contractor-proof__result .mono-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contractor-proof__result p {
+  font-size: 0.875rem;
+  color: var(--hd-muted);
+  line-height: 1.6;
+}
+
+.contractor-proof__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--hd-electric-blue);
+  transition: opacity 0.2s;
+}
+
+.contractor-proof__link:hover { opacity: 0.7; }
+
+.contractor-proof__before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.contractor-ba__col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contractor-ba__label {
+  display: block;
+  color: rgba(155, 168, 188, 0.6);
+}
+
+.contractor-ba__img {
+  border-radius: 10px;
+  border: 1px solid var(--hd-border);
+  width: 100%;
+  height: auto;
+}
+
+/* Packages */
+.contractor-packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contractor-package {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contractor-package--recommended {
+  border-color: rgba(0, 170, 255, 0.3);
+}
+
+.contractor-package__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 3px 10px;
+  background: rgba(217, 164, 65, 0.1);
+  border: 1px solid rgba(217, 164, 65, 0.3);
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--hd-soft-gold);
+  letter-spacing: 0.08em;
+}
+
+.contractor-package__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--hd-white);
+}
+
+.contractor-package__price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--hd-white);
+}
+
+.contractor-package__desc {
+  font-size: 0.875rem;
+  color: var(--hd-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.contractor-package__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.contractor-package__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.835rem;
+  color: var(--hd-muted);
+  line-height: 1.5;
+}
+
+.contractor-package__list li span {
+  color: var(--hd-electric-blue);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* CTA */
+.contractor-cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contractor-cta__title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--hd-white);
+  letter-spacing: -0.03em;
+}
+
+.contractor-cta__sub {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contractor-cta__buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .contractor-grid { grid-template-columns: repeat(2, 1fr); }
+  .contractor-packages { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .contractor-proof { grid-template-columns: 1fr; gap: 32px; }
+  .contractor-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .contractor-hero__ctas { flex-direction: column; }
+  .contractor-proof__before-after { grid-template-columns: 1fr; }
+}

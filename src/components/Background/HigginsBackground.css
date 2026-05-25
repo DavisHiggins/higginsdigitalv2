@@ -1,0 +1,360 @@
+/* ─── Base ──────────────────────────────────────────────────────────────── */
+.hd-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hd-bg__base {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #020b18 0%, #010810 40%, #020a14 70%, #01060e 100%);
+}
+
+/* ─── Inspiration image — atmospheric layer ─────────────────────────────── */
+.hd-bg__inspo {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/brand/background-inspo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  mix-blend-mode: screen;
+}
+
+/* ─── Diagonal blue streak lines ────────────────────────────────────────── */
+.hd-bg__diag {
+  position: absolute;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.hd-bg__diag--blue-1 {
+  top: -20%;
+  left: -10%;
+  width: 55%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, rgba(20, 120, 255, 0.9) 30%, rgba(0, 170, 255, 1) 60%, rgba(100, 200, 255, 0.4) 85%, transparent 100%);
+  transform: rotate(32deg);
+  animation: hd-line-pulse-blue 4s ease-in-out infinite alternate;
+  filter: blur(0.5px);
+}
+
+.hd-bg__diag--blue-2 {
+  top: -10%;
+  left: -15%;
+  width: 50%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 100, 220, 0.5) 35%, rgba(0, 170, 255, 0.7) 65%, transparent 100%);
+  transform: rotate(32deg);
+  animation: hd-line-pulse-blue 4s ease-in-out infinite alternate;
+  animation-delay: -1.5s;
+  filter: blur(0.5px);
+}
+
+.hd-bg__diag--blue-3 {
+  bottom: 5%;
+  left: -5%;
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 120, 255, 0.6) 40%, rgba(0, 170, 255, 0.4) 75%, transparent 100%);
+  transform: rotate(-18deg);
+  animation: hd-line-pulse-blue 6s ease-in-out infinite alternate;
+  animation-delay: -2s;
+  filter: blur(0.5px);
+}
+
+/* ─── Gold accent lines ──────────────────────────────────────────────────── */
+.hd-bg__diag--gold-1 {
+  top: 8%;
+  right: -8%;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(200, 150, 30, 0.6) 30%, rgba(240, 180, 60, 0.85) 60%, rgba(200, 150, 30, 0.3) 85%, transparent 100%);
+  transform: rotate(32deg);
+  animation: hd-line-pulse-gold 5s ease-in-out infinite alternate;
+  filter: blur(0.4px);
+}
+
+.hd-bg__diag--gold-2 {
+  top: 15%;
+  right: -12%;
+  width: 45%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(180, 130, 20, 0.4) 40%, rgba(220, 165, 50, 0.6) 65%, transparent 100%);
+  transform: rotate(32deg);
+  animation: hd-line-pulse-gold 5s ease-in-out infinite alternate;
+  animation-delay: -2s;
+  filter: blur(0.3px);
+}
+
+/* ─── Stars — spread across full background ─────────────────────────────── */
+.hd-bg__stars {
+  position: absolute;
+  inset: 0;
+}
+
+.hd-bg__star {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: hd-star-pulse 3s ease-in-out infinite alternate;
+}
+
+/* Top-left quadrant */
+.hd-bg__star--1 {
+  width: 2px; height: 2px;
+  top: 8%; left: 6%;
+  box-shadow: 0 0 5px 2px rgba(80, 190, 255, 0.7), 0 0 10px 5px rgba(0, 140, 255, 0.2);
+  animation-delay: 0s; animation-duration: 3.2s;
+}
+.hd-bg__star--2 {
+  width: 3px; height: 3px;
+  top: 18%; left: 14%;
+  box-shadow: 0 0 6px 3px rgba(0, 160, 255, 0.65), 0 0 12px 6px rgba(0, 140, 255, 0.2);
+  animation-delay: -1s; animation-duration: 2.8s;
+}
+.hd-bg__star--3 {
+  width: 2px; height: 2px;
+  top: 28%; left: 8%;
+  box-shadow: 0 0 5px 2px rgba(100, 200, 255, 0.5);
+  animation-delay: -2.2s; animation-duration: 4.1s;
+}
+
+/* Top-right quadrant */
+.hd-bg__star--4 {
+  width: 3px; height: 3px;
+  top: 6%; left: 82%;
+  box-shadow: 0 0 6px 3px rgba(0, 170, 255, 0.8), 0 0 12px 6px rgba(0, 140, 255, 0.25);
+  animation-delay: -0.5s; animation-duration: 3.6s;
+}
+.hd-bg__star--5 {
+  width: 2px; height: 2px;
+  top: 14%; left: 91%;
+  box-shadow: 0 0 5px 2px rgba(80, 190, 255, 0.6);
+  animation-delay: -1.8s; animation-duration: 2.5s;
+}
+.hd-bg__star--6 {
+  width: 4px; height: 4px;
+  top: 22%; left: 76%;
+  box-shadow: 0 0 8px 4px rgba(0, 170, 255, 0.9), 0 0 16px 8px rgba(0, 150, 255, 0.3);
+  animation-delay: -0.3s; animation-duration: 3.8s;
+}
+
+/* Middle-left */
+.hd-bg__star--7 {
+  width: 2px; height: 2px;
+  top: 48%; left: 5%;
+  box-shadow: 0 0 5px 2px rgba(100, 200, 255, 0.5), 0 0 10px 5px rgba(0, 140, 255, 0.15);
+  animation-delay: -2s; animation-duration: 2.9s;
+}
+
+/* Middle-right */
+.hd-bg__star--8 {
+  width: 3px; height: 3px;
+  top: 44%; left: 94%;
+  box-shadow: 0 0 6px 3px rgba(0, 150, 255, 0.55), 0 0 12px 6px rgba(0, 120, 255, 0.2);
+  animation-delay: -0.7s; animation-duration: 4.3s;
+}
+
+/* Center */
+.hd-bg__star--9 {
+  width: 3px; height: 3px;
+  top: 38%; left: 52%;
+  box-shadow: 0 0 6px 3px rgba(0, 160, 255, 0.8), 0 0 12px 6px rgba(0, 140, 255, 0.3);
+  animation-delay: -1.2s; animation-duration: 3.4s;
+}
+.hd-bg__star--10 {
+  width: 2px; height: 2px;
+  top: 55%; left: 62%;
+  box-shadow: 0 0 5px 2px rgba(80, 190, 255, 0.55);
+  animation-delay: -2.5s; animation-duration: 3.1s;
+}
+
+/* Bottom-left */
+.hd-bg__star--11 {
+  width: 3px; height: 3px;
+  top: 76%; left: 10%;
+  box-shadow: 0 0 6px 3px rgba(0, 150, 255, 0.6), 0 0 12px 6px rgba(0, 120, 255, 0.2);
+  animation-delay: -0.9s; animation-duration: 3.7s;
+}
+.hd-bg__star--12 {
+  width: 2px; height: 2px;
+  top: 88%; left: 22%;
+  box-shadow: 0 0 5px 2px rgba(100, 200, 255, 0.45);
+  animation-delay: -1.6s; animation-duration: 2.6s;
+}
+
+/* Bottom-right */
+.hd-bg__star--13 {
+  width: 4px; height: 4px;
+  top: 72%; left: 88%;
+  box-shadow: 0 0 8px 4px rgba(0, 170, 255, 0.85), 0 0 16px 8px rgba(0, 150, 255, 0.25);
+  animation-delay: -0.4s; animation-duration: 4s;
+}
+.hd-bg__star--14 {
+  width: 2px; height: 2px;
+  top: 84%; left: 78%;
+  box-shadow: 0 0 5px 2px rgba(80, 190, 255, 0.5);
+  animation-delay: -2.1s; animation-duration: 3.3s;
+}
+.hd-bg__star--15 {
+  width: 3px; height: 3px;
+  top: 92%; left: 68%;
+  box-shadow: 0 0 6px 3px rgba(0, 160, 255, 0.6), 0 0 12px 6px rgba(0, 140, 255, 0.2);
+  animation-delay: -1.4s; animation-duration: 2.7s;
+}
+
+/* ─── Constellations ─────────────────────────────────────────────────────── */
+.hd-bg__constellation {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.hd-bg__constellation--tl {
+  top: 4%;
+  left: 2%;
+  width: 200px;
+  height: 180px;
+  animation: hd-constellation-pulse 7s ease-in-out infinite alternate;
+}
+
+.hd-bg__constellation--br {
+  bottom: 4%;
+  right: 2%;
+  width: 220px;
+  height: 190px;
+  animation: hd-constellation-pulse 9s ease-in-out infinite alternate;
+  animation-delay: -3s;
+}
+
+.hd-bg__constellation-lines line {
+  animation: hd-constellation-line 6s ease-in-out infinite alternate;
+}
+
+.hd-cstar {
+  animation: hd-cstar-pulse 3s ease-in-out infinite alternate;
+  filter: blur(0.3px);
+}
+
+.hd-cstar--1 { animation-delay: 0s; animation-duration: 3.2s; }
+.hd-cstar--2 { animation-delay: -0.8s; animation-duration: 2.7s; }
+.hd-cstar--3 { animation-delay: -1.4s; animation-duration: 3.8s; }
+.hd-cstar--4 { animation-delay: -0.4s; animation-duration: 4.1s; }
+.hd-cstar--5 { animation-delay: -2s; animation-duration: 3.5s; }
+.hd-cstar--6 { animation-delay: -1s; animation-duration: 3.6s; }
+.hd-cstar--7 { animation-delay: -0.2s; animation-duration: 2.9s; }
+.hd-cstar--8 { animation-delay: -1.7s; animation-duration: 4.3s; }
+.hd-cstar--9 { animation-delay: -0.6s; animation-duration: 3.1s; }
+.hd-cstar--10 { animation-delay: -2.3s; animation-duration: 2.6s; }
+
+/* ─── Ambient glows ──────────────────────────────────────────────────────── */
+.hd-bg__ambient {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hd-bg__ambient--top {
+  width: 700px;
+  height: 400px;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(0, 120, 255, 0.12) 0%, transparent 70%);
+  animation: hd-ambient-pulse 8s ease-in-out infinite alternate;
+  filter: blur(40px);
+}
+
+.hd-bg__ambient--gold {
+  width: 500px;
+  height: 300px;
+  bottom: 10%;
+  right: -80px;
+  background: radial-gradient(ellipse, rgba(200, 140, 20, 0.08) 0%, transparent 70%);
+  animation: hd-ambient-pulse 10s ease-in-out infinite alternate;
+  animation-delay: -4s;
+  filter: blur(60px);
+}
+
+/* ─── Dot grid texture ───────────────────────────────────────────────────── */
+.hd-bg__dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, transparent 40%, transparent 70%, rgba(0,0,0,0.3) 100%);
+  opacity: 0.6;
+}
+
+/* ─── Vignette ───────────────────────────────────────────────────────────── */
+.hd-bg__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 80% at 50% 50%, transparent 40%, rgba(1, 6, 14, 0.55) 100%);
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────── */
+@keyframes hd-line-pulse-blue {
+  0%   { opacity: 0.5; filter: blur(0.5px) brightness(0.8); }
+  50%  { opacity: 1;   filter: blur(0px)   brightness(1.3); }
+  100% { opacity: 0.65; filter: blur(0.5px) brightness(1); }
+}
+
+@keyframes hd-line-pulse-gold {
+  0%   { opacity: 0.4; filter: blur(0.4px) brightness(0.8); }
+  50%  { opacity: 0.9; filter: blur(0px)   brightness(1.4); }
+  100% { opacity: 0.55; filter: blur(0.4px) brightness(1); }
+}
+
+@keyframes hd-star-pulse {
+  0%   { opacity: 0.35; transform: scale(0.8); }
+  50%  { opacity: 1;    transform: scale(1.4); }
+  100% { opacity: 0.55; transform: scale(1); }
+}
+
+@keyframes hd-ambient-pulse {
+  0%   { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+@keyframes hd-constellation-pulse {
+  0%   { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+@keyframes hd-constellation-line {
+  0%   { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes hd-cstar-pulse {
+  0%   { opacity: 0.4; r: 0.7; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* ─── Hero variant ───────────────────────────────────────────────────────── */
+.hd-bg--hero .hd-bg__ambient--top {
+  opacity: 1.3;
+  width: 900px;
+}
+
+.hd-bg--hero .hd-bg__inspo {
+  opacity: 0.24;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hd-bg__diag,
+  .hd-bg__star,
+  .hd-bg__ambient,
+  .hd-bg__constellation,
+  .hd-cstar {
+    animation: none !important;
+  }
+}

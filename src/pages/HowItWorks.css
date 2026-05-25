@@ -1,0 +1,149 @@
+.how-page {
+  padding-top: 80px;
+}
+
+.how-hero {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.how-hero__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.how-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--hd-white);
+  line-height: 1.1;
+  margin: 14px 0 18px;
+}
+
+.how-hero__sub {
+  font-size: 1.05rem;
+  color: var(--hd-muted);
+  line-height: 1.7;
+}
+
+/* Steps */
+.how-steps {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.how-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  align-items: start;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+}
+
+.how-step:last-child {
+  border-bottom: none;
+}
+
+.how-step__num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.how-step__num .mono-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--hd-gold);
+  font-size: 1.1rem;
+}
+
+.how-step__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.how-step__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--hd-white);
+  letter-spacing: -0.02em;
+}
+
+.how-step__desc {
+  font-size: 0.975rem;
+  color: var(--hd-muted);
+  line-height: 1.65;
+}
+
+.how-step__details {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.how-step__details li {
+  font-size: 0.85rem;
+  color: rgba(155, 168, 188, 0.8);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.how-step__details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--hd-electric-blue);
+  font-size: 0.75rem;
+}
+
+/* CTA */
+.how-cta {
+  max-width: 560px;
+  margin: 64px auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.how-cta__title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--hd-white);
+  letter-spacing: -0.03em;
+}
+
+.how-cta__sub {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.how-cta__buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .how-step {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .how-step__details {
+    grid-template-columns: 1fr;
+  }
+}
