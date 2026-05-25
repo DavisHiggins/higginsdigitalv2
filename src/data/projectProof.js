@@ -88,7 +88,6 @@ export const projects = [
     tech: 'React, custom backend, responsive dashboard design',
     liveLink: 'https://phideltchaplain.vercel.app/',
     showcaseImage: '/assets/projects/chaplain-home.png',
-    showcaseObjectPosition: 'top',
     logo: null,
     featured: true,
     galleryImages: [],
