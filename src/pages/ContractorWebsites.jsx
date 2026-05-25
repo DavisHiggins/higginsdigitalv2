@@ -20,7 +20,7 @@ const modernNeeds = [
   { icon: '✓', title: 'Fast mobile experience', description: "Works perfectly on the phone in someone's hand before they call." },
   { icon: '✓', title: 'Simple quote path', description: 'One obvious button or form that makes it easy to reach you.' },
   { icon: '✓', title: 'Project proof', description: 'Photos, before/afters, or descriptions that show real work done.' },
-  { icon: '✓', title: 'Trust signals', description: 'Licensed, insured, years in business — what makes you the safe choice.' },
+  { icon: '✓', title: 'Trust signals', description: 'Licensed, insured, years in business: what makes you the safe choice.' },
 ]
 
 export default function ContractorWebsites() {

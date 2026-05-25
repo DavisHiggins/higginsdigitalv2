@@ -58,11 +58,11 @@ const services = [
 
 const differentiators = [
   { title: 'Agency-level execution', description: 'Custom premium work without the overhead of a 20-person team.' },
-  { title: 'Performance-first builds', description: 'Sites built for speed, clean code, and real-world performance — not bloated page builders.' },
+  { title: 'Performance-first builds', description: 'Sites built for speed, clean code, and real-world performance, not bloated page builders.' },
   { title: 'Full ownership', description: 'Every line of code is yours after launch. No platform lock-in.' },
   { title: 'Flexible pricing paths', description: 'One-time builds, managed monthly plans, or care plans. Choose what fits your business.' },
   { title: 'Direct communication', description: 'Work directly with the developer building your site.' },
-  { title: 'Business-focused results', description: 'Every decision is made to serve your actual goals — more trust, more leads, more conversions.' },
+  { title: 'Business-focused results', description: 'Every decision is made to serve your actual goals: more trust, more leads, more conversions.' },
 ]
 
 export default function Services() {

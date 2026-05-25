@@ -37,7 +37,7 @@ export default function Header() {
       <div className="hd-header__inner container">
 
         {/* Brand: H mark + wordmark */}
-        <Link to="/" className="hd-header__brand" aria-label="Higgins Digital — Home">
+        <Link to="/" className="hd-header__brand" aria-label="Higgins Digital Home">
           <img
             src="/assets/brand/logo-mark-transparent.png"
             alt=""

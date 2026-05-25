@@ -54,6 +54,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--hd-white);
+  white-space: pre-line;
 }
 
 /* Path Selector */
@@ -121,22 +122,25 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* Pricing Card */
-.pricing-card {
+/* Pricing Card Wrapper (badge above + card below) */
+.pricing-card-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  position: relative;
+  height: 100%;
 }
 
-.pricing-card--recommended {
-  border-color: rgba(0, 170, 255, 0.35);
+.pricing-card__badge-slot {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 10px;
 }
 
 .pricing-card__badge {
   display: inline-flex;
-  align-self: flex-start;
-  padding: 4px 12px;
+  padding: 5px 14px;
   background: linear-gradient(135deg, rgba(0, 170, 255, 0.15) 0%, rgba(217, 164, 65, 0.1) 100%);
   border: 1px solid rgba(217, 164, 65, 0.4);
   border-radius: 100px;
@@ -144,6 +148,19 @@
   font-size: 0.65rem;
   letter-spacing: 0.1em;
   color: var(--hd-soft-gold);
+}
+
+/* Pricing Card */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  flex: 1;
+}
+
+.pricing-card--recommended {
+  border-color: rgba(0, 170, 255, 0.35);
 }
 
 .pricing-card__category {

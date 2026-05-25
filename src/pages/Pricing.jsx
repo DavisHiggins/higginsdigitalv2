@@ -16,18 +16,18 @@ const fadeUp = {
 
 function PricingCard({ plan, type = 'build' }) {
   const isQuote = plan.quoteOnly
-  const ctaLink = isQuote ? (plan.primaryCtaLink || plan.ctaLink || '/start-project') : null
 
   return (
-    <GlassCard
-      className={`pricing-card ${plan.recommended ? 'pricing-card--recommended' : ''}`}
-      glow={plan.recommended}
-      accent={plan.recommended ? 'featured' : 'blue'}
-      hover
-    >
-      {plan.badge && (
-        <div className="pricing-card__badge">{plan.badge}</div>
-      )}
+    <div className="pricing-card-wrapper">
+      <div className="pricing-card__badge-slot">
+        {plan.badge && <div className="pricing-card__badge">{plan.badge}</div>}
+      </div>
+      <GlassCard
+        className={`pricing-card ${plan.recommended ? 'pricing-card--recommended' : ''}`}
+        glow={plan.recommended}
+        accent={plan.recommended ? 'featured' : 'blue'}
+        hover
+      >
       {plan.category && (
         <span className="mono-label pricing-card__category">{plan.category}</span>
       )}
@@ -78,7 +78,8 @@ function PricingCard({ plan, type = 'build' }) {
           <Button to="/start-project" variant="primary" size="md">{plan.cta}</Button>
         )}
       </div>
-    </GlassCard>
+      </GlassCard>
+    </div>
   )
 }
 
@@ -104,7 +105,7 @@ export default function Pricing() {
                 { label: 'ONE-TIME BUILDS', value: 'Starting at $1,000' },
                 { label: 'MANAGED MONTHLY', value: 'Starting at $150/mo' },
                 { label: 'CARE PLANS', value: 'Starting at $75/mo' },
-                { label: 'MODIFICATIONS', value: 'Starting at $100' },
+                { label: 'MODIFICATIONS', value: 'Starting at\n$100' },
               ].map(h => (
                 <div key={h.label} className="pricing-hero__highlight">
                   <span className="pricing-hero__highlight-label mono-label">{h.label}</span>
@@ -295,7 +296,7 @@ export default function Pricing() {
               After launch, and after any agreed domain purchase, transfer, or project balance is complete, every line of code, every asset, and every file can belong 100% to the client. No platform lock-in, no hidden licensing fees, and no permission needed to host, edit, or migrate the site later.
             </p>
             <p className="pricing-ownership__note text-muted">
-              Monthly care and managed plans are available for businesses that want Higgins Digital to continue maintaining and improving the site — not because the client is trapped.
+              Monthly care and managed plans are available for businesses that want Higgins Digital to continue maintaining and improving the site, not because the client is trapped.
             </p>
           </motion.div>
         </div>

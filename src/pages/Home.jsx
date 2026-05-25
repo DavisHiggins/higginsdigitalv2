@@ -20,7 +20,7 @@ const fadeUp = {
 const services = [
   { icon: '⬡', title: 'Website Builds', desc: 'Custom-built from scratch for businesses that want to own their site.', to: '/services' },
   { icon: '↺', title: 'Website Redesigns', desc: 'Modernize an outdated site without losing what already works.', to: '/pricing' },
-  { icon: '◈', title: 'Managed Monthly Plans', desc: 'Build and launch with lower upfront commitment — support included.', to: '/pricing' },
+  { icon: '◈', title: 'Managed Monthly Plans', desc: 'Build and launch with lower upfront commitment, support included.', to: '/pricing' },
   { icon: '◇', title: 'Website Care Plans', desc: 'Keep your site monitored, edited, and performing after launch.', to: '/pricing' },
   { icon: '⬢', title: 'Custom Portals & Platforms', desc: 'Dashboards, portals, and internal tools beyond a standard website.', to: '/services' },
   { icon: '◉', title: 'Performance & Conversion', desc: 'Speed, SEO structure, and conversion path improvements.', to: '/services' },
@@ -30,7 +30,7 @@ const ownership = [
   { title: 'Full source-code transfer', desc: 'Every file delivered at project completion.' },
   { title: 'No platform lock-in', desc: 'No Webflow or Squarespace dependency.' },
   { title: 'No forced subscriptions', desc: 'Monthly plans chosen by you, not required to stay live.' },
-  { title: 'Portable deployment', desc: 'Host anywhere — Vercel, Netlify, your own server.' },
+  { title: 'Portable deployment', desc: 'Host anywhere: Vercel, Netlify, or your own server.' },
 ]
 
 const pricingPaths = [
@@ -86,7 +86,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.3 }}
             >
-              Higgins Digital builds fast, modern, conversion-focused websites and custom digital systems for businesses that need more than a template — with flexible pricing and full source-code ownership available at launch.
+              Higgins Digital builds fast, modern, conversion-focused websites and custom digital systems for businesses that need more than a template, with flexible pricing and full source-code ownership available at launch.
             </motion.p>
 
             <motion.div
@@ -187,7 +187,7 @@ export default function Home() {
           <SectionHeader
             badge="Pricing"
             title="Flexible pricing built around your goals."
-            subtitle="One-time builds, managed monthly plans, or care for an existing site — choose the path that fits your business."
+            subtitle="One-time builds, managed monthly plans, or care for an existing site. Choose the path that fits your business."
           />
           <div className="home-pricing-grid">
             {pricingPaths.map((p, i) => (
@@ -241,7 +241,7 @@ export default function Home() {
               <div className="home-project-card__body">
                 <span className="mono-label">Academic Platform</span>
                 <h3 className="home-project-card__title">Personal Portfolio &amp; Resume Website</h3>
-                <p className="home-project-card__tagline">A dedicated portfolio and resume site built to showcase data analytics work, technical projects, and professional experience — designed to impress recruiters and employers.</p>
+                <p className="home-project-card__tagline">A dedicated portfolio and resume site built to showcase data analytics work, technical projects, and professional experience, designed to impress recruiters and employers.</p>
               </div>
             </GlassCard>
           </div>
@@ -279,7 +279,7 @@ export default function Home() {
               <span className="mono-label">Free Resource</span>
               <h2 className="home-scorecard-banner__title">Is your website costing you leads?</h2>
               <p className="home-scorecard-banner__sub">
-                Submit your site and Higgins Digital will review first impression, mobile experience, speed, trust signals, CTAs, SEO structure, and conversion clarity — at no cost.
+                Submit your site and Higgins Digital will review first impression, mobile experience, speed, trust signals, CTAs, SEO structure, and conversion clarity, all at no cost.
               </p>
             </div>
             <div className="home-scorecard-banner__action">

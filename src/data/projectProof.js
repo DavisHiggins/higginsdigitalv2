@@ -21,8 +21,8 @@ export const projects = [
     comparisons: [
       {
         id: 'hbg-about',
-        beforeLabel: 'Before — About Page',
-        afterLabel: 'After — About Page',
+        beforeLabel: 'Before: About Page',
+        afterLabel: 'After: About Page',
         beforeImage: '/assets/projects/hbg-before-about.png',
         afterImage: '/assets/projects/hbg-after-about.png',
         beforeAlt: 'Higgins Building Group old About page',
@@ -30,8 +30,8 @@ export const projects = [
       },
       {
         id: 'hbg-contact',
-        beforeLabel: 'Before — Contact Page',
-        afterLabel: 'After — Contact Page',
+        beforeLabel: 'Before: Contact Page',
+        afterLabel: 'After: Contact Page',
         beforeImage: '/assets/projects/hbg-before-contact.png',
         afterImage: '/assets/projects/hbg-after-contact.png',
         beforeAlt: 'Higgins Building Group old Contact page',
@@ -39,8 +39,8 @@ export const projects = [
       },
       {
         id: 'hbg-gallery',
-        beforeLabel: 'Before — Gallery Page',
-        afterLabel: 'After — Gallery Page',
+        beforeLabel: 'Before: Gallery Page',
+        afterLabel: 'After: Gallery Page',
         beforeImage: '/assets/projects/hbg-before-gallery.png',
         afterImage: '/assets/projects/hbg-after-gallery.png',
         beforeAlt: 'Higgins Building Group old Gallery page',
@@ -53,7 +53,7 @@ export const projects = [
     client: 'Professional Photography Portfolio',
     category: 'wy_not_pics',
     tagline: 'A polished photography portfolio experience built to showcase visual work with a minimal, immersive interface, clean navigation, and a premium presentation for client-facing credibility.',
-    problem: 'A photographer with serious talent needed a digital presence that matched the quality of the work — not a generic template that blended in with every other portfolio online.',
+    problem: 'A photographer with serious talent needed a digital presence that matched the quality of the work, not a generic template that blended in with every other portfolio online.',
     built: 'Custom immersive photography portfolio with category-based browsing, full-bleed imagery, minimal navigation, and a clean contact path built to convert viewers into clients.',
     improved: [
       'Immersive portfolio structure built around the photography',
